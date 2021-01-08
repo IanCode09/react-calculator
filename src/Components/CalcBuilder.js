@@ -11,6 +11,8 @@ const CalcBuilder = () => {
 
     if(input1 || input2 || input3) newNumber.push(Number(input1), Number(input2), Number(input3))
 
+    console.log(newNumber);
+
     const additionHandler = () => {
         const result = newNumber.reduce((total, value) => total + value );
         setTotal(result)
